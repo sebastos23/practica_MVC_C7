@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <h1> <%= title %> </h1>
+    <% marca.forEach(auto => { %>
+        <ul>
+            <li> <%= auto.marca %> </li>
+            <li> <%= auto.modelo %> </li>
+            <li> <%= auto.anio %> </li>
+            <li> <%= auto.color %> </li>
+        </ul>
+    <% }); %> 
+    
+</body>
+</html>

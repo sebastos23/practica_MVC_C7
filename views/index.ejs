@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    
+    <h1> <%= title %>  </h1>
+    
+    <% sucursales.forEach( sucursal => { %>
+        <li>
+            <a style="color: black;" href="/sucursales/ <%= sucursal.sucursal %> "> Sucursal: <%= sucursal.sucursal %></a>
+        </li>
+    <% }) %> 
+    <br><br>
+    <a href="/sucursales">Ver mas...</a>
+
+</body>
+</html>

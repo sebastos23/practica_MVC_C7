@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs') %>
+<body>
+
+    <h1> <%= title %> </h1>
+
+    <% sucursales.forEach(sucursal => { %>
+
+        <a href="/sucursales/<%= sucursal.sucursal %> ">
+            <h5> <%= `Sucursal: ${sucursal.sucursal}` %> </h5>
+        </a>
+        
+        <ul>
+            <li> <%=  `Teléfono: ${sucursal.telefono}` %> </li>
+            <li> <%= `Dirección: ${sucursal.direccion}` %> </li>
+        </ul>
+
+    <% }); %> 
+
+    <a href="/autos">Ver nuestros autos</a>
+
+</body>
+</html>
